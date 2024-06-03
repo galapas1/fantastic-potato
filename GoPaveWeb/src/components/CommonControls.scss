@@ -1,0 +1,15 @@
+input {
+  &:focus {
+  outline: none;
+ }
+}
+
+button {
+  &.btn {
+    &.btn-custom {
+      &:focus {
+        outline: none;
+      } 
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.btn-group {
+  .btn {
+      background-color: grey;
+      color: black;
+    &.active {
+      background-color: #FE8350;
+      color: white
+    }
+  }
+}

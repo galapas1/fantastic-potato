@@ -1,0 +1,26 @@
+.menu {
+  .list {
+    max-height: 0;
+    transition: max-height 0.15s ease-out;
+    overflow: hidden;
+    padding: 0;
+
+    &.dropdown-visible {
+      max-height: 315px;
+      transition: max-height 0.25s ease-in;
+      overflow-y: auto;
+    }  
+  }
+}
+
+.add-new-folder {
+  height: 0;
+  transition: height 0.15s ease-out;
+  overflow: hidden;
+
+  &.new-folder-dropdown-visible {
+    height: 200px;
+    transition: height 0.25s ease-in;
+  } 
+}
+

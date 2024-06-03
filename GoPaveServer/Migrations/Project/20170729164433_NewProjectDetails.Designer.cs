@@ -1,0 +1,53 @@
+﻿using System;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
+using GoPaveServer.Data;
+
+namespace GoPaveServer.Migrations.Project
+{
+    [DbContext(typeof(ProjectContext))]
+    [Migration("20170729164433_NewProjectDetails")]
+    partial class NewProjectDetails
+    {
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        {
+            modelBuilder
+                .HasAnnotation("ProductVersion", "1.1.1")
+                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+            modelBuilder.Entity("GoPaveServer.Models.Project", b =>
+                {
+                    b.Property<int?>("ID")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Body");
+
+                    b.Property<DateTime>("DateCreated");
+
+                    b.Property<string>("Description");
+
+                    b.Property<string>("Designer");
+
+                    b.Property<DateTime>("LastModified");
+
+                    b.Property<string>("Name");
+
+                    b.Property<string>("Route");
+
+                    b.Property<int?>("Type");
+
+                    b.Property<int>("UserID");
+
+                    b.Property<string>("ZipCode");
+
+                    b.Property<int>("folderId");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Projects");
+                });
+        }
+    }
+}

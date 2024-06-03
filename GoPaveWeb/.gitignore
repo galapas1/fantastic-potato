@@ -1,0 +1,10 @@
+.idea
+
+# Dependency directory
+node_modules
+
+#dist folder
+dist
+
+src/bundle.js
+src/bundle.js.map

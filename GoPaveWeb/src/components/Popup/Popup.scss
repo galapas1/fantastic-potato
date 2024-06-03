@@ -1,0 +1,47 @@
+.render-popup {
+  position: absolute;
+  height: 535px;
+  transition: height 0.5s ease;
+  //opacity: 0.9;
+  z-index: 100;
+  bottom: 0;
+  background-color: #f2f2f2;
+}
+
+.render-graph-popup {
+  bottom: 40px;
+}
+
+.custom-traffic-summary-popup-height {
+  height: 580px;
+}
+.summary-form-graph-popup-height {
+  height: 450px;
+}
+
+.asphalt-analysis-popup-height {
+  height: 650px;
+  bottom: 5px;
+}
+
+.base-popup {
+  position: absolute;
+  height: 0;
+  z-index: 10;
+  bottom: 0;
+  transition: height 0.5s ease;
+
+}
+
+.base-graph-popup {
+   bottom: 40px;
+}
+
+.asphalt-analysis-default-parameters-input {
+  text-align: center;
+  pointer-events: none;
+}
+
+.asphalt-analysis-input {
+  text-align: center;
+}

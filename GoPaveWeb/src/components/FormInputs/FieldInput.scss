@@ -1,0 +1,59 @@
+.form-group-div-input {
+  &.has-error {
+    border: 1px solid red;
+  }
+  &.no-right-border {
+    border-right: 0;   
+  }
+}
+
+.no-right-border {
+  border-right: 0;
+}
+
+.custom-traffic-form-input-has-error {
+  border: 1px solid red;
+}
+
+.input-height {
+  height: 30px;
+}
+
+.has-error {
+    border: 1px solid red;
+  }
+  
+.has-error-text {
+  color: red;
+  font-size: 10.5px;
+}
+
+// Needed to add the color #FE7747 to the borders of the inputs
+.form-group-div-input {
+  &.has-warning {
+    border: 1px solid #FE7747;
+    border-right: 0;
+  } 
+
+}
+// Needed to add the color #FE7747 to the borders of the spans 
+.has-warning {
+  border: 1px solid #FE7747;
+} 
+
+.has-warning-text {
+  color: #FE7747;
+  font-size: 11px;
+  text-shadow: 1px 1px 0px #000000;
+}
+
+.field-disabled {
+  border-color: black !important;
+  background-color: lightgrey !important;
+  pointer-events: none;
+}
+
+.no-cursor-allowed {
+  cursor: not-allowed;
+}
+
